@@ -17,11 +17,6 @@ const Message = db.define('message', {
 	},
 	branchId: {
 		type: Sequelize.INTEGER
-	},
-	timeStamp: {
-		type: Sequelize.DATE,
-		defaultValue: Sequelize.fn('now')
-	}
-});
+	}});
 
 module.exports = Message;
